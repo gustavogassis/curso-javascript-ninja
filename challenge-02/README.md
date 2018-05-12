@@ -72,24 +72,8 @@ function ninja(a, b, c) {
     return a;
   }
   
-  if (b !== undefined && a === undefined && c === undefined) {
-    return c;
-  }
-  
-  if (c !== undefined && a === undefined && b === undefined) {
-    return c;
-  }
-  
   if (a !== undefined && b !== undefined && c === undefined) {
     return a + b;
-  }
-  
-  if (a !== undefined && c !== undefined && b === undefined) {
-    return a + c;
-  }
-  
-  if (b !== undefined && c !== undefined && a === undefined) {
-    return b + c;
   }
   
   if (a !== undefined && b !== undefined && c !== undefined) {
