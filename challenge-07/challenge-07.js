@@ -8,7 +8,7 @@ A função deverá retornar o array atualizado.
 */
 function addItem(x) {
   ninja.push(x);
-  console.log(ninja);
+  return ninja;
 }
 
 /*
@@ -58,9 +58,9 @@ Só vamos mudar o range:
 */
 console.log( 'Números pares entre 100 e 120:' );
 for (i = 100; i <= 120; i++) {
-  i % 2 == 0 ? console.log(i) : false ;//console.log('');
+  i % 2 == 0 ? console.log(i) : '';
 }
 console.log( 'Números ímpares entre 111 e 125:' );
 for (i = 111; i <= 125; i++) {
-  i % 2 == 1 ? console.log(i) : false ;//console.log('');
+  i % 2 == 1 ? console.log(i) : '';
 }
