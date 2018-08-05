@@ -151,11 +151,23 @@
   divisão e resto. Crie variáveis com os nomes "subtraction",
   "multiplication", "division" e "mod".
   */
-  // ?
+  operationSignal = '-';
+  var subtraction = calculator(operationSignal);
+  
+  operationSignal = '*';
+  var multiplication = calculator(operationSignal);
+  
+  operationSignal = '/';
+  var division = calculator(operationSignal);
+  
+  operationSignal = '%';
+  var mod = calculator(operationSignal);
+
 
   /*
   Repita o PASSO 2 novamente, mas passando um operador inválido, para ver se
   a mensagem de erro será mostrada no console.
   */
-  // ?
+  operationSignal = ')';
+  var erro = calculator(operationSignal);
 })()
