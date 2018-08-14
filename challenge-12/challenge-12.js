@@ -35,24 +35,22 @@
   `name`: String
   `pages`: Number
   */
-  var livro1 = {
+  books.push({
     name : 'O Cortiço',
     pages : 140
-  };
+  });
   
   
-  var livro2 = {
+  books.push( {
     name : 'Iracema',
     pages : 80
-  };
+  });
   
   
-  var livro3 = {
+  books.push({
     name : 'Memória Póstumas de Bras Cubas',
     pages : 156
-  };
-
-  books.push(livro1, livro2, livro3);
+  });
   console.log( '\nLista de livros:' );
 
   /*
@@ -64,8 +62,8 @@
   /*
   Remova o último livro, e mostre-o no console.
   */
-  books.pop();
-  console.log(books)
+  
+  console.log(books.pop())
 
   console.log( '\nAgora sobraram somente os livros:' );
   /*
@@ -95,7 +93,11 @@
   no formato abaixo:
       "[PROPRIEDADE]: [VALOR]"
   */
-  // ?
+  for(var i = 0; i < books.lenght; i++) {
+    for(var prop in books[i]) {
+      console.log(prop + ': ' + books[i][prop]);
+    }
+  }
 
   /*
   Crie um array chamado `myName`. Cada item desse array deve ser uma letra do
