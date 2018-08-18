@@ -112,7 +112,7 @@
   Mostre o array `newBrasil` no console
   */
   console.log( '\nnewBrasil:' );
-  // ?
+  console.log(newBrasil)
 
   /*
   Percorra o array `brasil` e verifique se os estados tem mais de 7 letras cada,
@@ -150,23 +150,32 @@
   - "[ESTADO] pertence ao Brasil."
   Atribua o novo array a uma variável chamada `map`.
   */
-  // ?
+  var map;
+  map = newBrasil.map(function (item, indice) {
+    return {
+            id : item.id++,
+            estado: item.estado + ' pertence ao Brasil.' 
+           };
+  })
 
   /*
   Mostre no console o array criado acima:
   */
   console.log( '\nnewBrasil agora com mais informações:' );
-  // ?
+  console.log(map);
 
   /*
   Filtre o array criado acima, retornando somente os estados que tiverem
   ID par. Atribua o valor à uma variável chamada `filter`.
   */
-  // ?
+  var filter;
+  filter = map.filter(function (item, indice){
+    return item.id % 2 == 0;
+  })
 
   /*
   Mostre o array filtrado acima no console.
   */
   console.log( '\nEstados com ID par:' );
-  // ?
+  console.log(filter);
 })()
